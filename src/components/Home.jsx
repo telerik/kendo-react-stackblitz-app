@@ -1,4 +1,9 @@
 import React from 'react';
+import { ReactComponent as ComponentsIcon } from '../images/components.svg';
+import { ReactComponent as StylesIcon } from '../images/styles.svg';
+import { ReactComponent as BlogsIcon } from '../images/blogs.svg';
+import { ReactComponent as TutorialsIcon } from '../images/tutorials.svg';
+import { ReactComponent as Kendoka } from '../images/kendoka.svg';
 
 const Home = (props) => {
     return (
@@ -16,25 +21,25 @@ const Home = (props) => {
             </div>
             <div className='row justify-content-center'>
                 <div className='col-4 text-right'>
-                    <div>
-                        <img className='kendoka' src='./img/kendoka.png' alt='kendoka' />
+                    <div className='kendoka-div'>
+                        <Kendoka/>
                     </div>
                 </div>
                 <div className='col-4 components-list'>
                     <p>
-                        <img src='./img/components.png' alt='components' />
+                        <ComponentsIcon/>
                         <a href='https://www.telerik.com/kendo-react-ui/components/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-trial-docs-and-demos'>Components & Documentation</a>
                     </p>
                     <p>
-                        <img src='./img/styles.png' alt='styles' />
+                        <StylesIcon/>
                         <a href='https://www.telerik.com/kendo-react-ui/components/styling/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-trial-styling'>KendoReact Themes Overview</a>
                     </p>
                     <p>
-                        <img src='./img/blogs.png' alt='blogs' />
+                        <BlogsIcon/>
                         <a href='https://www.telerik.com/blogs/tag/react?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-blog-react-blogs'>Blog Posts</a>
                     </p>
                     <p>
-                        <img src='./img/docs.png' alt='tutorials' />
+                        <TutorialsIcon/>
                         <a href='https://www.telerik.com/kendo-react-ui/react-hooks-guide/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-blog-react-hooks-pp'>Tutorials</a>
                     </p>
                 </div>
