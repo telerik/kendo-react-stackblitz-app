@@ -1,8 +1,8 @@
 import React from 'react';
-import { ReactComponent as LinkedinIcon } from '../images/linkedin.svg';
-import { ReactComponent as TwitterIcon } from '../images/twitter.svg';
-import { ReactComponent as FacebookIcon } from '../images/facebook.svg';
-import { ReactComponent as YoutubeIcon } from '../images/youtube.svg';
+import LinkedinIcon from '../images/linkedin.svg';
+import TwitterIcon from '../images/twitter.svg';
+import FacebookIcon from '../images/facebook.svg';
+import YoutubeIcon from '../images/youtube.svg';
 
 const span = (<span className='divider'> | </span>)
 const Footer = (props) => {
@@ -19,10 +19,10 @@ const Footer = (props) => {
                 </div>
                 <div className='d-flex ml-auto'>
                     <div className="social">
-                        <a href="https://www.facebook.com/KendoUI/"><FacebookIcon/></a>
-                        <a href="https://twitter.com/kendoreact"><TwitterIcon/></a>
-                        <a href="https://www.youtube.com/results?search_query=kendoreact"><YoutubeIcon/></a>
-                        <a href="https://www.linkedin.com/showcase/telerik/"><LinkedinIcon/></a>
+                    <a href="https://www.facebook.com/KendoUI/"><img src={FacebookIcon} alt="facebook" /></a>
+                    <a href="https://twitter.com/kendoreact"><img src={TwitterIcon} alt="twitter" /></a>
+                    <a href="https://www.youtube.com/results?search_query=kendoreact"><img src={YoutubeIcon} alt="youtube" /></a>
+                    <a href="https://www.linkedin.com/showcase/telerik/"><img src={LinkedinIcon} alt="linkedin" /></a>
                     </div>
                 </div>
             </div>
