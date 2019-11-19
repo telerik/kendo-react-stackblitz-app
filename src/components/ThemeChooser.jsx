@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { DropDownList } from '@progress/kendo-react-dropdowns';
 import { Tooltip } from '@progress/kendo-react-tooltip';
-import { ReactComponent as PaletteIcon } from '../images/palette.svg';
+import PaletteIcon from '../images/palette.svg';
 
 const valueRender = (element, value) => {
     if (!value) {
@@ -18,7 +18,7 @@ const valueRender = (element, value) => {
                 color: 'red'
             }}
         >
-            <PaletteIcon/>
+            <img src={PaletteIcon} alt="palete" />
         </span>,
         <span key={2}>&nbsp; {element.props.children}</span>
     ];
