@@ -20,12 +20,12 @@ const Home = (props) => {
                 </div>
             </div>
             <div className='row justify-content-center'>
-                <div className='col-4 text-right'>
-                    <div>
-                        <img className='kendoka' src={Kendoka} alt='kendoka' />
+                <div className='col-6 text-right'>
+                    <div className='kendoka-div'>
+                        <Kendoka/>
                     </div>
                 </div>
-                <div className='col-4 components-list'>
+                <div className='col-6 components-list'>
                     <p>
                     <img src={ComponentsIcon} alt='components' />
                         <a href='https://www.telerik.com/kendo-react-ui/components/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-trial-docs-and-demos'>Components & Documentation</a>

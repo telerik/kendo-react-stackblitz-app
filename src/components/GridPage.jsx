@@ -137,8 +137,7 @@ const GridPage = (props) => {
                             )}
                         </GridToolbar>
                         <Column field="ProductID" title="Id" width="50px" editable={false} />
-                        <Column field="ProductName" title="Product Name" />
-                        <Column field="FirstOrderedOn" title="First Ordered" editor="date" format="{0:d}" />
+                        <Column field="ProductName" title="Product Name" width="250px"/>
                         <Column field="UnitsInStock" title="Units" width="150px" editor="numeric" />
                         <Column field="Discontinued" title="Discontinued" editor="boolean" />
                         <Column cell={CommandCell} width="240px" />
