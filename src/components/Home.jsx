@@ -22,7 +22,7 @@ const Home = (props) => {
             <div className='row justify-content-center'>
                 <div className='col-6 text-right'>
                     <div className='kendoka-div'>
-                        <Kendoka/>
+                        <img className='kendoka' src={Kendoka} alt='kendoka' />
                     </div>
                 </div>
                 <div className='col-6 components-list'>
