@@ -5,7 +5,7 @@
   "dependencies": {
     "@progress/kendo-data-query": "latest",
     "@progress/kendo-drawing": "latest",
-    "@progress/kendo-react-animation": "^3.6.0",
+    "@progress/kendo-react-animation": "latest",
     "@progress/kendo-react-charts": "latest",
     "@progress/kendo-react-dateinputs": "latest",
     "@progress/kendo-react-dialogs": "latest",
@@ -14,7 +14,7 @@
     "@progress/kendo-react-inputs": "latest",
     "@progress/kendo-react-intl": "latest",
     "@progress/kendo-react-layout": "latest",
-    "@progress/kendo-react-popup": "^3.6.0",
+    "@progress/kendo-react-popup": "latest",
     "@progress/kendo-react-tooltip": "latest",
     "@progress/kendo-react-data-tools": "latest",
     "@progress/kendo-react-buttons": "latest",
