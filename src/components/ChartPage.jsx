@@ -51,7 +51,7 @@ const ChartPage = (props) => {
                         </ChartSeries>
                         <ChartValueAxis>
                             <ChartValueAxisItem labels={{ format: 'p0' }} />
-                        </ChartValueAxis>}
+                        </ChartValueAxis>
                     </Chart>}
                 </div>
                 <div className='col-12 col-lg-3 mt-3 mt-lg-0'>
