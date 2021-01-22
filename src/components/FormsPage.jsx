@@ -55,7 +55,7 @@ const FormsPage = (props) => {
                 <div className='col-12 col-lg-9 border-right'>
                     <div className="row example-wrapper">
                         <div className="col-xs-12 col-sm-6 offset-sm-3 example-col">
-                            <div className="card">
+                            <div>
                                 <div className="card-block">
                                     <form className="k-form" onSubmit={handleSubmit}>
                                         <fieldset>
@@ -113,6 +113,7 @@ const FormsPage = (props) => {
                     <h3>KendoReact Forms</h3>
                     <p>KendoReact includes a wide offering of UI components that can be used to build forms, including CSS classes to easily create and structure gorgeous forms.</p>
                     <p>The required inputs get validated upon form submission and if the validation fails, the form submission is prevented. Out of the box, KendoReact delivers components which support the HTML5 form validation and also provide props for configuring a set of minimal requirements for a component to be in a valid state.</p>
+                    <p>Building forms with great UX is hard, so lean on the <a href="https://www.telerik.com/kendo-react-ui/components/form/guidelines-with-examples/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-evaluation-form-design-guidelines">React Form Design Guidelines</a> our experts created to make this easy for you.</p>
                     <p>For documentation and demos of the many form-friendly components please visit their documentation (<a href="https://www.telerik.com/kendo-react-ui/components/dateinputs/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-trial-dateinputs">Date Inputs</a>, <a href="https://www.telerik.com/kendo-react-ui/components/dropdowns/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-trial-dropdowns">DropDowns</a>, <a href="https://www.telerik.com/kendo-react-ui/components/inputs/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-trial-inputs">Inputs</a> etc).</p>
                 </div>
             </div>
