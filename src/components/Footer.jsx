@@ -21,7 +21,7 @@ const Footer = (props) => {
                     <div className="social">
                     <a href="https://www.facebook.com/KendoUI/"><img src={FacebookIcon} alt="facebook" /></a>
                     <a href="https://twitter.com/kendoui"><img src={TwitterIcon} alt="twitter" /></a>
-                    <a href="https://www.youtube.com/results?search_query=kendoreact"><img src={YoutubeIcon} alt="youtube" /></a>
+                    <a href="https://www.youtube.com/playlist?list=PLLGlTD7u3kMqdTOBmM7gh4NOVgaR-UH0y"><img src={YoutubeIcon} alt="youtube" /></a>
                     <a href="https://www.linkedin.com/showcase/telerik/"><img src={LinkedinIcon} alt="linkedin" /></a>
                     </div>
                 </div>
