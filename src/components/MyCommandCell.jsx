@@ -1,9 +1,8 @@
 
 import React from 'react';
-import { GridCell } from '@progress/kendo-react-grid';
 
 export function MyCommandCell({ edit, remove, add, update, discard, cancel, editField }) {
-    return class extends GridCell {
+    return class extends React.Component {
         render() {
             const { dataItem } = this.props;
             const inEdit = dataItem[editField];
