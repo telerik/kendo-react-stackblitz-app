@@ -11,7 +11,7 @@ const Home = (props) => {
             <div className='row'>
                 <div className='col-12'>
                     <h1 className='welcome mb-0'>Welcome to KendoReact</h1>
-                    <h2 className='sub-header mt-0'>This is a sample application built with KendoReact - a set of over 90+ UI components built from the ground-up specifically for React.</h2>
+                    <h2 className='sub-header mt-0'>This is a sample application built with KendoReact - a set of 100+ customizable React UI components on a mission to help you design & build business apps much faster.</h2>
                 </div>
             </div>
             <div className='row'>
@@ -40,7 +40,7 @@ const Home = (props) => {
                     </p>
                     <p>
                         <img src={TutorialsIcon} alt='tutorials' />
-                        <a href='https://www.telerik.com/kendo-react-ui/react-hooks-guide/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-blog-react-hooks-pp'>Tutorials</a>
+                        <a href='https://www.telerik.com/kendo-react-ui/resources/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-blog-react-hooks-pp'>Tutorials</a>
                     </p>
                 </div>
             </div>
