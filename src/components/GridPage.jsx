@@ -8,12 +8,12 @@ import ThemeChooser from './ThemeChooser';
 const GridPage = (props) => {
     const editField = "inEdit";
     const [data, setData] = useState(sampleProducts);
-    const [dataState, setDataState ] = useState({skip: 0, take: 10 })
+    const [dataState, setDataState] = useState({skip: 0, take: 10 })
 
     const generateId = data => data.reduce((acc, current) => Math.max(acc, current.ProductID), 0) + 1;
 
     const removeItem = (data, item) => {
-        let index = data.findIndex(p => p === item || item.ProductID && p.ProductID === item.ProductID);
+        let index = data.findIndex(p => (p === item || item.ProductID) && (p.ProductID === item.ProductID));
         if (index >= 0) {
             data.splice(index, 1);
         }
@@ -90,23 +90,24 @@ const GridPage = (props) => {
     const cancelCurrentChanges = () => {
         setData([...sampleProducts]);
     }
-    let CommandCell = MyCommandCell({
-        edit: enterEdit,
-        remove: remove,
 
-        add: add,
-        discard: discard,
-
-        update: update,
-        cancel: cancel,
-
-        editField: editField
-    });
+    const CommandCell = (props) => (
+        <MyCommandCell
+          {...props}
+          edit={enterEdit}
+          remove={remove}
+          add={add}
+          discard={discard}
+          update={update}
+          cancel={cancel}
+          editField={editField}
+        />
+      );
     const hasEditedItem = data.some(p => p.inEdit);
     return (
         <div className="container-fluid">
-            <ThemeChooser changeTheme={props.changeTheme} theme={props.theme}/>
-            <div className='row my-4'>
+           <ThemeChooser changeTheme={props.changeTheme} theme={props.theme}/>
+           <div className='row my-4'>
                 <div className='col-12 col-lg-9 border-right'>
                     <Grid
                         data={process(data, dataState)}
@@ -115,9 +116,11 @@ const GridPage = (props) => {
                         // pageable // uncomment to enable paging
                         // sortable // uncomment to enable sorting
                         // filterable // uncomment to enable filtering
-                        // onDataStateChange={(e) => setDataState(e.data)} // uncomment to enable data operations
-                        // {...dataState} // uncomment to enable data operations
-                    >
+                        onDataStateChange={(e) => 
+                            setDataState(e.dataState)
+                         } // uncomment to enable data operations
+                        {...dataState} // uncomment to enable data operations
+                    >   
                         <GridToolbar>
                             <button
                                 title="Add new"
@@ -125,7 +128,7 @@ const GridPage = (props) => {
                                 onClick={addNew}
                             >
                                 Add new
-                </button>
+                            </button>
                             {hasEditedItem && (
                                 <button
                                     title="Cancel current changes"
@@ -133,7 +136,7 @@ const GridPage = (props) => {
                                     onClick={cancelCurrentChanges}
                                 >
                                     Cancel current changes
-                    </button>
+                                </button>
                             )}
                         </GridToolbar>
                         <Column field="ProductID" title="Id" width="50px" editable={false} />

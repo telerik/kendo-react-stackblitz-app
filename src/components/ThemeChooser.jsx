@@ -36,7 +36,7 @@ const ThemeChooser = (props) => {
         <div className='container-fluid'>
             <Tooltip ref={tooltip} position="left" anchorElement='target'/>
             <div className="d-flex my-2" >
-                <div className="ml-auto d-flex ">
+                <div className="ml-auto d-flex">
                     <div className='d-flex mr-1 mr-lg-3 change-theme'
                         onMouseOver={event => {tooltip && tooltip.current.handleMouseOver(event)}}
                         onMouseOut={event => tooltip && tooltip.current.handleMouseOut(event)}>
@@ -46,7 +46,7 @@ const ThemeChooser = (props) => {
                         textField={'text'} data={themes}
                         onChange={(e) => props.changeTheme(e.target.value.link)}
                         valueRender={valueRender}
-                        className="d-block my-auto"
+                        className="d-flex my-auto p-1"
                     />
                 </div>
             </div>

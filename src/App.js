@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import { Header } from './components/Header'
-import { BrowserRouter as Router, Route  } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes  } from "react-router-dom";
 import Home from './components/Home';
 import GridPage from './components/GridPage';
 import ChartPage from './components/ChartPage';
@@ -20,10 +20,12 @@ const App = () => {
         <link rel="stylesheet" href={theme}></link>
         <div className="content">
           <Header projectName={'Project Name'} />
-          <Route exact path="/" component={Home} key={1}/>
-          <Route exact path="/grid" render={(props) => <GridPage {...props} changeTheme={changeTheme} theme={theme}/>} key={2}/>
-          <Route exact path="/chart" render={(props) => <ChartPage {...props} changeTheme={changeTheme} theme={theme}/>}  key={3}/>
-          <Route exact path="/forms" render={(props) => <FormsPage {...props} changeTheme={changeTheme} theme={theme}/>} key={4}/>
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/grid" element={<GridPage changeTheme={changeTheme} theme={theme}/>}/>
+            <Route path="/chart" element={<ChartPage changeTheme={changeTheme} theme={theme}/>}/>
+            <Route path="/forms" element={<FormsPage changeTheme={changeTheme} theme={theme}/>}/>
+          </Routes>
         </div>
         <div className="footer">
           <Footer />
