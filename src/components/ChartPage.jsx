@@ -9,6 +9,7 @@ import {
     ChartValueAxisItem
 } from '@progress/kendo-react-charts'
 import ThemeChooser from './ThemeChooser';
+import 'hammerjs'; 
 
 const series = [
     { category: 'EUROPE', value: 0.3 },

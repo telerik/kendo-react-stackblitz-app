@@ -52,54 +52,54 @@ const FormsPage = (props) => {
             </DialogActionsBar>
         </Dialog>}
             <div className='row my-4'>
-                <div className='col-12 col-lg-9 border-right'>
+                <div className='col-12 col-lg-8 border-right'>
                     <div className="row example-wrapper">
                         <div className="col-xs-12 col-sm-6 offset-sm-3 example-col">
                             <div className="card">
                                 <div className="card-block">
                                     <form className="k-form" onSubmit={handleSubmit}>
                                         <fieldset>
-                                            <legend>User Details</legend>
+                                            <legend className='m-1'>User Details</legend>
 
-                                            <label className="k-form-field">
+                                            <label className="k-form-field p-2">
                                                 <span>First Name</span>
                                                 <Input placeholder="Your Name" value={formData.firstName} onChange={(e) => onFormFieldChange(e, "firstName")} />
                                             </label>
-                                            <label className="k-form-field">
+                                            <label className="k-form-field p-2">
                                                 <span>Last Name</span>
                                                 <Input placeholder="Your Last Name" value={formData.lastName} onChange={(e) => onFormFieldChange(e, "lastName")} />
                                             </label>
-                                            <div className="k-form-field">
+                                            <div className="k-form-field p-2">
                                                 <span>Date of Birth</span>
                                                 <DatePicker value={formData.dateOfBirth} onChange={(e) => onFormFieldChange(e, "dateOfBirth")} />
                                             </div>
-                                            <label className="k-form-field">
+                                            <label className="k-form-field p-2">
                                                 <span>Email <span className="k-required">*</span></span>
                                                 <Input type="email" required={true} placeholder="Your Email" value={formData.email} onChange={(e) => onFormFieldChange(e, "email")} />
                                             </label>
-                                            <label className="k-form-field">
+                                            <label className="k-form-field p-2">
                                                 <span>Company<span className="k-field-info">optional</span></span>
                                                 <Input placeholder="Your Company" value={formData.company} onChange={(e) => onFormFieldChange(e, "company")} />
                                             </label>
                                         </fieldset>
 
                                         <fieldset>
-                                            <legend>Credentials</legend>
-                                            <label className="k-form-field">
+                                            <legend className='m-1'>Credentials</legend>
+                                            <label className="k-form-field p-2">
                                                 <span>Username</span>
                                                 <Input required={true} placeholder="Your username" value={formData.userName} onChange={(e) => onFormFieldChange(e, "userName")} />
                                             </label>
-                                            <label className="k-form-field">
+                                            <label className="k-form-field p-2">
                                                 <span>Password</span>
                                                 <Input type="password" required={true} placeholder="Your password" value={formData.password} onChange={(e) => onFormFieldChange(e, "password")} />
                                             </label>
-                                            <label className="k-form-field">
+                                            <label className="k-form-field p-2">
                                                 <input type="checkbox" id="auth-2fa" className="k-checkbox"  checked={formData.twoFactor} onChange={(e)=> setFormData({...formData, twoFactor: e.target.checked})}/>
                                                 <label className="k-checkbox-label" htmlFor="auth-2fa">Enable two-factor authentication</label>
                                             </label>
                                         </fieldset>
 
-                                        <div className="text-right">
+                                        <div className="text-right m-2">
                                             <button type="button" className="k-button" onClick={clearForm}>Clear</button> &nbsp;
                                             <button type="submit" className="k-button k-primary">Submit</button>
                                         </div>

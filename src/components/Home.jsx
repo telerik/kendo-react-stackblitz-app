@@ -14,13 +14,11 @@ const Home = (props) => {
                     <h1 className='get-started'>Get Started</h1>
                 </div>
             </div>
-            <div className='row justify-content-center'>
-                <div className='col-4 text-right'>
-                    <div>
-                        <img className='kendoka' src='./img/kendoka.png' alt='kendoka' />
-                    </div>
+            <div className='row justify-content-center align-items-center'>
+                <div className='col-2 text-right mx-4'>
+                    <img className='kendoka' src='./img/kendoka.png' alt='kendoka' />
                 </div>
-                <div className='col-4 components-list'>
+                <div className='col-lg-4 components-list'>
                     <p>
                         <img src='./img/components.png' alt='components' />
                         <a href='https://www.telerik.com/kendo-react-ui/components/?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-trial-docs-and-demos'>Components & Documentation</a>
